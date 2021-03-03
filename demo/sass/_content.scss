@@ -1,0 +1,40 @@
+.content{
+    width: 100%;
+    margin-top: 80px;
+    .cotent-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .cotent-btn-link{
+            padding: 10px 20px;
+            border: solid 1px #ccc;
+            min-width: 120px;
+            color: $corlor_content;
+            position: relative;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 40px;
+            +.cotent-btn-link{
+                margin-left: 20px;
+            }
+            &:hover{
+                background-color: $corlor_text;
+                color: #fff;
+            }
+            &:focus{
+                background-color: $corlor_text;
+                color: #fff;
+            }
+            &:before{
+                position: absolute;
+                border: solid 10px transparent;
+                border-top:solid 10px $corlor_text;
+                content: '';
+                top: 175%;
+                left: 50%;
+                transform: translate(-50%, -175%);
+            }
+        }
+    }
+}

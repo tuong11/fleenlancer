@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    background-color: $corlor_bg-top;
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header-logo{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bg-dark{
+    background-color: $corlor_bg-menu!important;
+    height: 60px;
+    font-size: 22px;
+}
+.slick-arrow{
+    display: none!important;
+}

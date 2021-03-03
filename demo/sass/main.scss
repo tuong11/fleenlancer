@@ -1,12 +1,5 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
-body{
-margin: 0;
-padding: 0}
-html{
-font-size: 14px}
-h1{
-corlor: red;}
+@import "base";
+@import "header";
+@import "slider";
+@import "content";
+@import "footer";
