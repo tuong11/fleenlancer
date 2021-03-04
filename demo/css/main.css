@@ -95,10 +95,6 @@ html {
   color: #0066ff;
 }
 
-.slick-arrow {
-  display: none !important;
-}
-
 .slide-body {
   position: relative;
   content: '';
@@ -157,6 +153,7 @@ html {
   text-decoration: none;
   text-align: center;
   margin-bottom: 40px;
+  transition: .3s;
 }
 .content .cotent-btn .cotent-btn-link + .cotent-btn-link {
   margin-left: 20px;
@@ -164,6 +161,9 @@ html {
 .content .cotent-btn .cotent-btn-link:hover {
   background-color: #2754eb;
   color: #fff;
+}
+.content .cotent-btn .cotent-btn-link:hover::before {
+  opacity: 1;
 }
 .content .cotent-btn .cotent-btn-link:focus {
   background-color: #2754eb;
@@ -178,12 +178,7 @@ html {
   left: 50%;
   transform: translate(-50%, -175%);
   opacity: 0;
-}
-.content .cotent-btn .cotent-btn-link::before:hover {
-  opacity: 1;
-}
-.content .cotent-btn .cotent-btn-link::before:focus {
-  opacity: 1;
+  transition: .3s;
 }
 
 .content-product {
@@ -277,22 +272,27 @@ html {
   width: 100%;
   position: relative;
 }
+.shoes .shoes-body .shoes-img:hover::before {
+  transform: scale(1);
+}
 .shoes .shoes-body .shoes-img::before {
   background: rgba(0, 0, 0, 0.51);
   z-index: 2;
-}
-.shoes .shoes-body .shoes-img::before:hover {
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  transform: scale(0);
   transition: all 0.5s ease-out;
 }
 
 .new-post {
   width: 100%;
+}
+.new-post .container {
+  padding: 0 5px;
 }
 .new-post h2 {
   text-align: center;
@@ -304,7 +304,7 @@ html {
   padding-bottom: 65px;
 }
 .new-post .new-bg .new-body {
-  width: 15%;
+  padding: 0 10px;
 }
 .new-post .new-bg .new-body h3 {
   padding: 20px 0;
@@ -314,8 +314,11 @@ html {
 .new-post .new-bg .new-body p {
   font-size: 13px;
 }
-.new-post .new-bg .new-body + .new-body {
-  padding-left: 20px;
+.new-post .new-bg .new-body img {
+  transition: all 0.5s ease;
+}
+.new-post .new-bg .new-body:hover img {
+  filter: blur(1px) grayscale(60%);
 }
 
 .slide-icon {

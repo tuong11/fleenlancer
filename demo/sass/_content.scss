@@ -6,7 +6,6 @@
         display: flex;
         justify-content: center;
         .cotent-btn-link{
-            
             padding: 10px 20px;
             border: solid 1px #ccc;
             min-width: 120px;
@@ -16,12 +15,16 @@
             text-decoration: none;
             text-align: center;
             margin-bottom: 40px;
+            transition: .3s;
             +.cotent-btn-link{
                 margin-left: 20px;
             }
             &:hover{
                 background-color: $corlor_text;
                 color: #fff;
+                &::before {
+                    opacity: 1;
+                }
             }
             &:focus{
                 background-color: $corlor_text;
@@ -36,12 +39,7 @@
                 left: 50%;
                 transform: translate(-50%, -175%);
                 opacity: 0;
-                &:hover{
-                    opacity: 1;
-                }
-                &:focus{
-                    opacity: 1;
-                }
+                transition: .3s;
             }
         }
     }

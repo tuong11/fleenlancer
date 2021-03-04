@@ -1,5 +1,8 @@
 .new-post{
     width: 100%;
+    .container{
+        padding: 0 5px;
+    }
     h2{
         text-align: center;
         padding-bottom: 50px;
@@ -9,7 +12,7 @@
         border-bottom: solid 1px #ccc;
         padding-bottom: 65px;
         .new-body{
-            width: 15%;
+            padding: 0 10px;
             h3{
                 padding: 20px 0;
                 text-transform: uppercase;
@@ -18,8 +21,13 @@
             p{
                 font-size: 13px;
             }
-            +.new-body{
-                padding-left: 20px;
+            img{
+                transition: all 0.5s ease;
+            }
+            &:hover{
+                img{
+                    filter: blur(1px) grayscale(60%);
+                }
             }
         }
     }
