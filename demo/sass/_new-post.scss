@@ -1,0 +1,39 @@
+.new-post{
+    width: 100%;
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .new-bg{
+        width: 100%;
+        border-bottom: solid 1px #ccc;
+        padding-bottom: 65px;
+        .new-body{
+            width: 15%;
+            h3{
+                padding: 20px 0;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+            p{
+                font-size: 13px;
+            }
+            +.new-body{
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+.slide-icon{
+    width: 100%;
+    padding: 20px 0;
+    .slide-icon-qc{
+        width: 100%;
+        display: flex;
+        .img-slide{
+            width: 20%;
+            margin: 0 20px;
+        }
+    }
+}
