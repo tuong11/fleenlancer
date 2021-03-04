@@ -6,6 +6,7 @@
         display: flex;
         justify-content: center;
         .cotent-btn-link{
+            
             padding: 10px 20px;
             border: solid 1px #ccc;
             min-width: 120px;
@@ -26,7 +27,7 @@
                 background-color: $corlor_text;
                 color: #fff;
             }
-            &:before{
+            &::before{
                 position: absolute;
                 border: solid 10px transparent;
                 border-top:solid 10px $corlor_text;
@@ -34,7 +35,93 @@
                 top: 175%;
                 left: 50%;
                 transform: translate(-50%, -175%);
+                opacity: 0;
+                &:hover{
+                    opacity: 1;
+                }
+                &:focus{
+                    opacity: 1;
+                }
             }
         }
     }
+}
+
+.content-product{
+    width: 100%;
+    .content-sp{
+        width: 100%;
+        margin-bottom: 50px;
+        .content-img{
+            width: 100%;
+            position: relative;
+            
+        }
+    }
+}
+.img-block{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    
+}
+.img-hiden{
+    width: 100%;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 1;
+    
+    &:hover{
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+}
+
+.content-sp-prd{
+    padding: 30px 20px 20px;
+    width: 100%;
+    .content-text{
+        width: 100%;
+        font-size: 16px;
+        .content-link{
+            color: $corlor_content;
+            font-weight: 500;
+            &:hover{
+                color: #0066ff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.content-giohang{
+    border-top: solid 1px #ccc;
+    width: 100%;
+}
+.content-icons{
+    display: flex;
+    justify-content: space-between;
+    .line-through{
+        text-decoration: line-through;
+    }
+    &.star-icon{
+        padding: 10px 0;
+    }
+    .content-sp-md{
+        color: $corlor_money;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .line-through{
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+}
+.content-giohang{
+    padding: 10px 20px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    
 }

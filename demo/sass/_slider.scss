@@ -1,3 +1,43 @@
-.slider{
-    width: 100%;
-}
+.slick-arrow{
+            display: none!important;
+        }
+
+.slide-body{
+    position: relative;
+    content: '';
+    top: 0;
+    left: 0;
+    .slider-text{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p{
+            
+            font-size: 18px;
+            padding: 20px 0;
+            font-weight: 500;
+        }
+        button{
+            border: solid 2px #fff;
+            border-radius: 5px;
+            min-width: 120px;
+            min-height: 35px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}        
