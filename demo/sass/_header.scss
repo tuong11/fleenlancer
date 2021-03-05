@@ -32,7 +32,13 @@
         background-color: $corlor_bg-menu;
         padding: 20px 0;
         font-size: 18px;
+        .container{
+            padding: 0;
+        }
     }
+}
+.navbar{
+    padding: 0 15px;
 }
 .navbar-nav{
     display: flex;

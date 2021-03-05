@@ -1,0 +1,22 @@
+.content-product{
+    &.men-shoes-list{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: start;
+        .shoes-product{
+            width: 31%;
+            +.shoes-product{
+            margin-left: 20px;
+            }
+        }
+    }
+}
+.slide-qc{
+    margin-top: 20px;
+    width: 100%;
+    img{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}

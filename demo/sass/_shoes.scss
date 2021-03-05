@@ -6,6 +6,7 @@
         .shoes-img{
             width: 100%;
             position: relative;
+            max-width: 100%;
             &:hover{
                 &::before{
                     transform: scale(1);

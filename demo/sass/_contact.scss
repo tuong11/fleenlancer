@@ -1,0 +1,58 @@
+.contact{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+    form{
+        font-weight: 500;
+        .form-group{
+            font-size: 16px;
+        }
+        input{
+            min-height: 40px;
+        }
+        button{
+            min-width: 150px;
+            min-height: 35px;
+            font-size: 16px;
+        }
+    }
+    .contact-waiting{
+        width: 100%;
+        border: solid 2px #ccc;
+        min-height: 80px;
+        background-color: #fffaf3;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        .form-title{
+            padding: 10px 0 10px 20px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        p{
+            padding-left: 20px;
+            width: 100%;
+            font-weight: 300;
+        }
+    }
+    .contact-list{
+        margin-bottom: 40px;
+        margin-top: 20px;
+        .contact-item{
+            list-style: none;
+            &.hour{
+                list-style: outside;
+                margin-left: 30px;
+                +.hour{
+                    margin-top: -20px;
+                }
+            }
+            +.contact-item{
+                padding-top: 20px;
+            }
+        }
+        
+    }
+}
+.form-control{
+    font-size: 14px;
+}

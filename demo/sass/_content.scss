@@ -26,10 +26,6 @@
                     opacity: 1;
                 }
             }
-            &:focus{
-                background-color: $corlor_text;
-                color: #fff;
-            }
             &::before{
                 position: absolute;
                 border: solid 10px transparent;
@@ -79,7 +75,7 @@
 }
 
 .content-sp-prd{
-    padding: 30px 20px 20px;
+    padding: 30px 10px 20px;
     width: 100%;
     .content-text{
         width: 100%;
@@ -118,8 +114,25 @@
     }
 }
 .content-giohang{
-    padding: 10px 20px 20px;
+    padding: 10px 10px 20px;
     font-size: 14px;
     font-weight: 500;
-    
+    a{
+        &:hover{
+            text-decoration: none;
+            color: #0066ff;
+        }
+    }
+}
+.fa{
+     font-size: 13px;
+     &.fa-star{
+        color: #0066ff;
+     }
+     &.star-dissign{
+        color: rgba(0,0,0,.15);
+     }
+     &:hover{
+         color: #0066ff;
+     }
 }
