@@ -4,6 +4,7 @@
         width: 100%;
         min-height: 200px;
         background-color: $corlor_bg-bt;
+        
     }
     .footer-bottom{
         width: 100%;
@@ -21,11 +22,16 @@
 .footer-body{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 14px;
+    
     .footer-taikhoan{
-        min-width: 200px;
+        width: 25%;
+        @include mq_min_767{
+            width: 50%;
+        }
     }
     .footer-text{
         padding: 20px 0;
