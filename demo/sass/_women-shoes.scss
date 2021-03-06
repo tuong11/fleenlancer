@@ -1,0 +1,29 @@
+.woment-shoes-img{
+    width: 100%;
+    min-height: 270px;
+    position: relative;
+    overflow: hidden;
+    .shoes-giay, .shoes-giayhiden{
+        position: absolute;
+        content: '';
+        transition: .5s;
+        top: 0;
+    }
+    .shoes-giay{
+        left: 0;
+    }
+    .shoes-giayhiden{
+        left: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    &:hover{
+        .shoes-giay{
+            left: -100%;
+        }
+        .shoes-giayhiden{
+            left: 0;
+        }
+    }
+}

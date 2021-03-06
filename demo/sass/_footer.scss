@@ -24,6 +24,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 14px;
+    .footer-taikhoan{
+        min-width: 200px;
+    }
     .footer-text{
         padding: 20px 0;
     }
@@ -51,9 +54,18 @@ h6{
         &:hover{
             color: #fff;
             text-decoration: none;
+            animation: padding 0.5s forwards;
         }
     }
     +.footer-item{
         padding-top: 10px;
+    }
+}
+@keyframes padding {
+    from {
+        padding-left: 0;
+    }
+    to {
+        padding-left: 10px;
     }
 }

@@ -29,13 +29,6 @@
         }
     
     }
-    
-    .home-register{
-        width: 100%;
-        min-height: 50px;
-        background-color: #f4f1ea;
-        margin-bottom: 20px;
-    }
     .form-register{
         width: 100%;
         display: flex;
@@ -64,5 +57,25 @@
             }
         }
         
+    }
+}
+.home-register{
+    width: 100%;
+    min-height: 50px;
+    background-color: #f4f1ea;
+    margin: 20px 0;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #b3b3b3;
+    span{
+        color: #4d4d4d;
+    }
+    .register-link{
+        font-weight: 500;
+    }
+    .fa-home{
+        font-size: 16px;
     }
 }

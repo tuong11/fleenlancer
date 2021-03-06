@@ -349,12 +349,6 @@ html {
 .section-register .title-register .fa-user-plus {
   font-size: 16px;
 }
-.section-register .home-register {
-  width: 100%;
-  min-height: 50px;
-  background-color: #f4f1ea;
-  margin-bottom: 20px;
-}
 .section-register .form-register {
   width: 100%;
   display: flex;
@@ -382,6 +376,27 @@ html {
 }
 .section-register .form-register form button:hover {
   background-color: #CACBCD;
+}
+
+.home-register {
+  width: 100%;
+  min-height: 50px;
+  background-color: #f4f1ea;
+  margin: 20px 0;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.home-register span {
+  color: #4d4d4d;
+}
+.home-register .register-link {
+  font-weight: 500;
+}
+.home-register .fa-home {
+  font-size: 16px;
 }
 
 .contact {
@@ -465,17 +480,21 @@ html {
   transition: all 0.3s ease-out;
 }
 
+.accessories-img img {
+  transition: filter 0.5s ease-out;
+}
+.accessories-img img:hover {
+  filter: blur(2px) brightness(30%);
+}
+
 .content-product.men-shoes-list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: start;
+  justify-content: space-between;
 }
 .content-product.men-shoes-list .shoes-product {
-  width: 31%;
-}
-.content-product.men-shoes-list .shoes-product + .shoes-product {
-  margin-left: 20px;
+  width: 32%;
 }
 
 .slide-qc {
@@ -485,6 +504,34 @@ html {
 .slide-qc img {
   width: 100%;
   padding-bottom: 20px;
+}
+
+.woment-shoes-img {
+  width: 100%;
+  min-height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+.woment-shoes-img .shoes-giay, .woment-shoes-img .shoes-giayhiden {
+  position: absolute;
+  content: '';
+  transition: .5s;
+  top: 0;
+}
+.woment-shoes-img .shoes-giay {
+  left: 0;
+}
+.woment-shoes-img .shoes-giayhiden {
+  left: 100%;
+}
+.woment-shoes-img img {
+  width: 100%;
+}
+.woment-shoes-img:hover .shoes-giay {
+  left: -100%;
+}
+.woment-shoes-img:hover .shoes-giayhiden {
+  left: 0;
 }
 
 .form-login {
@@ -657,6 +704,7 @@ html {
 .news-items .news-link:hover {
   color: #0066ff;
   text-decoration: none;
+  animation: padding 0.5s forwards;
 }
 
 .category-product {
@@ -746,6 +794,9 @@ html {
   padding-bottom: 30px;
   font-size: 14px;
 }
+.footer-body .footer-taikhoan {
+  min-width: 200px;
+}
 .footer-body .footer-text {
   padding: 20px 0;
 }
@@ -774,7 +825,17 @@ h6 {
 .footer-item .item-link:hover {
   color: #fff;
   text-decoration: none;
+  animation: padding 0.5s forwards;
 }
 .footer-item + .footer-item {
   padding-top: 10px;
+}
+
+@keyframes padding {
+  from {
+    padding-left: 0;
+  }
+  to {
+    padding-left: 10px;
+  }
 }

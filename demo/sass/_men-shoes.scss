@@ -3,12 +3,9 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: start;
+        justify-content: space-between;
         .shoes-product{
-            width: 31%;
-            +.shoes-product{
-            margin-left: 20px;
-            }
+            width: 32%;
         }
     }
 }
