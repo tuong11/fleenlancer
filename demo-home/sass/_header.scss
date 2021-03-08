@@ -1,0 +1,68 @@
+.header{
+    width: 100%;
+    .header-sign{
+        width: 100%;
+        border-bottom: solid 1px #e6e6e6;
+        max-height: 50px;
+        align-items: center;
+        .sign-list{
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+            justify-content: space-between;
+            color: $color-text-footer;
+            list-style: none;
+            padding: 18px 0 0;
+        }
+    }
+    .header-banner{
+        width: 100%;
+        display: flex;
+        padding: 25px 0;
+        justify-content: space-between;
+        align-items: center;
+        .header-seach{
+            align-items: center;
+            min-width: 630px;
+            min-height: 45px;
+            border-radius: 3px;
+            color: $color-text-seach;
+            @include bodered($color-boder, 2px);
+            font-size: 14px;
+            img{
+                padding: 10px;
+                margin-left: 10px;
+            }
+            input{
+                border: none;
+                color: $color-text-seach;
+                min-height: 33px;
+                min-width: 450px;
+                margin: 6px 10px 6px 0;
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                min-width: 95px;
+                min-height: 33px;
+                margin: 6px;
+                background-color: $color-link;
+                border-radius: 3px;
+                color: $color-bg-btn;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .header-people{
+            font-size: 16px;
+            color: $color-text;
+            font-weight: bold;
+            img{
+                padding-right: 20px;
+            }
+        }
+    }
+}

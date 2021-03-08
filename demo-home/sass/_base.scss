@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+@font-face{
+    font-family: myriad;
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: myriad;
+}
