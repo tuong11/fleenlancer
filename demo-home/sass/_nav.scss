@@ -1,0 +1,40 @@
+.header-nav{
+    width: 100%;
+    min-height: 60px;
+    background-color: $color-link;
+    align-items: center;
+    .navbar-brand{
+        margin-right: 30px;
+        padding: 20px 0;
+        min-width: 300px;
+        font-weight: bold;
+        background-color: $color-text;
+        opacity: 0.09;
+        .fa-bars{
+            margin-right: 10px;
+        }
+    }
+    .navbar{
+        min-height: 60px;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar-expand-sm{
+        .navbar-nav {
+            font-size: 16px;
+            color: $color-text;
+            font-weight: bold;
+            .nav-link {
+                padding: 18px 0;
+                color: $color-text;
+                
+            }
+            .nav-item{
+                height: 100%;
+                +.nav-item{
+                    padding-left: 45px;
+                }
+            }
+        }
+    }
+}

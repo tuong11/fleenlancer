@@ -1,0 +1,61 @@
+.advertisement{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    .advertisement-content{
+        align-items: center;
+        width: 49%;
+        min-height: 320px;
+        background-image: linear-gradient(to right, #f63831, #f88459);
+        display: flex;
+        justify-content: space-between;
+        &.right{
+            background-image: linear-gradient(to right, #304a6a, #5080a8);
+        }       
+    }
+}
+.advertisement-description{
+    padding-left: 80px;
+    .advertisement-sale{
+        padding: 5px 15px;
+        line-height: 12px;
+        background-color: $color-link;
+        color: $color-text;
+        font-size: 12px;
+        font-weight: bold;
+        &.btn-bag{
+            background-color: #fdffbe;
+        }
+    }
+    .advertisement-title{
+        font-size: 30px;
+        margin: 10px 0;
+        line-height: 40px;
+        color: $color-bg-btn;
+        span{
+            font-weight: bold;
+        }
+    }
+    .advertisement-price{
+        font-size: 20px;
+        color: $color-link;
+        font-weight: bold;
+        &.bag-price{
+          color: #fdffbe;
+        }
+        span{
+            text-decoration: line-through;
+            color: $color-text;
+            padding-left: 10px;
+        }
+    }
+    .advertisement-shops{
+        padding: 15px;
+        line-height: 14px;
+        background-color: $color-bg-btn;
+        color: $color-text;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+}

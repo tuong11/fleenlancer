@@ -25,7 +25,6 @@
             align-items: center;
             min-width: 630px;
             min-height: 45px;
-            border-radius: 3px;
             color: $color-text-seach;
             @include bodered($color-boder, 2px);
             font-size: 14px;
@@ -34,26 +33,17 @@
                 margin-left: 10px;
             }
             input{
-                border: none;
                 color: $color-text-seach;
                 min-height: 33px;
                 min-width: 450px;
                 margin: 6px 10px 6px 0;
-                &:focus{
-                    outline: none;
-                }
             }
             button{
                 min-width: 95px;
                 min-height: 33px;
                 margin: 6px;
                 background-color: $color-link;
-                border-radius: 3px;
                 color: $color-bg-btn;
-                border: none;
-                &:focus{
-                    outline: none;
-                }
             }
         }
         .header-people{
@@ -64,5 +54,12 @@
                 padding-right: 20px;
             }
         }
+    }
+}
+
+.signin{
+    color: $color-link;
+    &:hover{
+        color: $color-link;
     }
 }

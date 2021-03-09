@@ -1,0 +1,130 @@
+.slide-show{
+    width: 100%;
+    .product-sale{
+        margin: 30px 0;
+        width: 100%;
+        min-height: 140px;
+        @include bodered($color-boder, 1px);
+        display: flex;
+        justify-content: space-evenly;
+        .shops{
+            width: 33.33%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            +.shops{
+                border-left: solid 1px $color-boder;
+            }
+        }
+    }
+}
+.shops{
+    img{
+        padding: 0 20px;
+    }
+    .shops-content-sale{
+        font-size: 14px;
+        color: $color-text-seach;
+    }
+    .shops-content-title{
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-sale;
+    }
+    button{
+        min-width: 95px;
+        font-weight: bold;
+        min-height: 30px;
+        @include bodered($color-bg-sale, 2px);
+        font-size: 12px;
+        background-color: $color-bg-btn;
+        padding: 5px 10px;
+    }
+}
+.slider-slick{
+    width: 100%;
+}
+
+.slider{
+    width: 100%;
+    position: relative;
+    color: $color-bg-btn;
+    display: flex;
+    text-align: center;
+    .slider-content{
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -70%);
+        .Ultimate{
+            font-size: 18px;
+        }
+        .more{
+            font-size: 24px;
+            padding-bottom: 25px;
+            .more-sale{
+                color: $color-link;
+            }
+        }
+        button{
+            padding: 20px 35px;
+            background-color: $color-bg-btn;
+        }
+        img{
+            margin: 30px 0;
+        }
+    }
+    
+}
+.service{
+    width: 100;
+    margin: 55px 0;
+}
+
+.slick-arrow{
+    position: absolute;
+    content: '';
+    top: 50%;
+}
+.slick-prev{
+    left: -60px;
+    background-image: url(../img/prev.jpg);
+    color: transparent;
+    min-height: 48px;
+    min-width: 48px;
+    background-repeat: no-repeat;
+}
+.slick-next{
+    right: -60px;
+    background-image: url(../img/next.jpg);
+    color: transparent;
+    min-height: 48px;
+    min-width: 48px;
+    background-repeat: no-repeat;
+}
+.service{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .secive-container{
+        width: 25%;
+        text-align: center;
+        padding: 0 60px;
+        h3{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 20px 0 15px;
+            margin: 0;
+            color: $color-sale;
+        }
+        p{
+            font-size: 14px;
+            color: $color-text-footer;
+        }
+        +.secive-container{
+            border-left: solid 1px $color-boder;
+        }
+    }
+}
