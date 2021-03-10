@@ -3,7 +3,6 @@
     .product-sale{
         margin: 30px 0;
         width: 100%;
-        min-height: 140px;
         @include bodered($color-boder, 1px);
         display: flex;
         justify-content: space-evenly;
@@ -33,9 +32,7 @@
         color: $color-sale;
     }
     button{
-        min-width: 95px;
         font-weight: bold;
-        min-height: 30px;
         @include bodered($color-bg-sale, 2px);
         font-size: 12px;
         background-color: $color-bg-btn;
@@ -60,10 +57,12 @@
         transform: translate(-50%, -70%);
         .Ultimate{
             font-size: 18px;
+            font-weight: bold;
         }
         .more{
             font-size: 24px;
             padding-bottom: 25px;
+            font-weight: bold;
             .more-sale{
                 color: $color-link;
             }
@@ -71,12 +70,13 @@
         button{
             padding: 20px 35px;
             background-color: $color-bg-btn;
+            font-size: 14px;
+            font-weight: bold;
         }
         img{
             margin: 30px 0;
         }
     }
-    
 }
 .service{
     width: 100;
@@ -87,22 +87,28 @@
     position: absolute;
     content: '';
     top: 50%;
+    background-color: transparent;
+    
 }
 .slick-prev{
     left: -60px;
-    background-image: url(../img/prev.jpg);
+    background-image: url(../img/prev.png);
     color: transparent;
-    min-height: 48px;
-    min-width: 48px;
+    padding: 14px 4px;
     background-repeat: no-repeat;
+    &:hover, &:focus{
+        background-image: url(../img/prev-hover.png);
+    }
 }
 .slick-next{
     right: -60px;
-    background-image: url(../img/next.jpg);
+    background-image: url(../img/next.png);
     color: transparent;
-    min-height: 48px;
-    min-width: 48px;
+    padding: 14px 13.5px;
     background-repeat: no-repeat;
+    &:hover, &:focus{
+        background-image: url(../img/next-hover.png);
+    }
 }
 .service{
     width: 100%;

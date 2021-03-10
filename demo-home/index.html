@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
     
 </head>
@@ -20,7 +20,15 @@
                         Welcome to our online store! Join Free or <a href="#" class="signin">Sign in</a>
                     </li>
                     <li class="sign-item">
-                        <img src="img/english.jpg" alt="language"> English | <span class="currency">USD</span>
+                        <img src="img/english.jpg" alt="language"> English&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="dollars">USD&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <div class="currency">
+                            <p>AUD</p>
+                            <p>JPY</p>
+                            <p>GBP</p>
+                            <p>RUB</p>
+                            <p>VND</p>
+                        </div>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -30,18 +38,18 @@
                 <div class="header-logo">
                     <img src="img/logo.jpg" alt="">
                 </div>
-
-                <div class="header-seach">
+                <form class="header-seach">
                     <img src="img/seach.jpg" alt="">
                     <input type="text" placeholder="Search among 100,000 products...">
                     <button>Search</button>
-                </div>
+                </form>
 
                 <div class="header-people">
-                    <img src="img/people.jpg" alt="">
-                    <img src="img/heart.jpg" alt="">
-                    <img src="img/card.jpg" alt="">
-                    $00.0
+                    <p><img class="icon-img" src="img/people.png" alt="">
+                    <img src="img/hear.png" alt="">
+                    <img src="img/card.png" alt="">
+                    </p>
+                    <p>$00.0</p>
                 </div>
             </div>
         </div>
@@ -139,7 +147,7 @@
                         <img src="img/slider.jpg" alt="">
                         <div class="slider-content">
                             <p class="Ultimate">Ultimate</p>
-                            <img src="img/text-slide.jpg" alt="">
+                            <img src="img/logo.png" alt="">
                             <p class="more">Save on <span class="more-sale">50% and more</span></p>
                             <button>Explore Products</button>
                         </div>
@@ -148,7 +156,7 @@
                     <img src="img/slider.jpg" alt="">
                     <div class="slider-content">
                         <p class="Ultimate">Ultimate</p>
-                        <img src="img/text-slide.jpg" alt="">
+                        <img src="img/logo.png" alt="">
                         <p class="more">Save on <span class="more-sale">50% and more</span></p>
                         <button>Explore Products</button>
                     </div>
@@ -157,7 +165,7 @@
                 <img src="img/slider.jpg" alt="">
                 <div class="slider-content">
                     <p class="Ultimate">Ultimate</p>
-                    <img src="img/text-slide.jpg" alt="">
+                    <img src="img/logo.png" alt="">
                     <p class="more">Save on <span class="more-sale">50% and more</span></p>
                     <button>Explore Products</button>
                 </div>
@@ -199,22 +207,47 @@
             <div class="featured">
                 <div class="categorys">
                     <img src="img/gym.jpg" alt="">
+                    <div class="cate-product">
+                        <p>156 Products</p>
+                    </div>
+                    <div class="cate-amount">
+                        <p>Gym & Fitness</p>
+                    </div>
                 </div>
                 <div class="categorys">
                     <img src="img/sport.jpg" alt="">
+                    <div class="cate-product">
+                        <p>49 Products</p>
+                    </div>
+                    <div class="cate-amount">
+                        <p>Sport Shoes</p>
+                    </div>
                 </div>
                 <div class="categorys">
                     <img src="img/clothing.jpg" alt="">
+                    <div class="cate-product">
+                        <p>121 Products</p>
+                    </div>
+                    <div class="cate-amount">
+                        <p>Athletic Clothing</p>
+                    </div>
                 </div>
                 <div class="categorys">
                     <img src="img/lifestyle.jpg" alt="">
+                    <div class="cate-product">
+                        <p>61 Products</p>
+                    </div>
+                    <div class="cate-amount">
+                        <p>Lifestyle</p>
+                    </div>
                 </div>
             </div>
-            <h2 class="content-title">Featured Categories</h2>
-            <div class="rating">
+            
+            <h2 class="content-title">Top Rating</h2>
+            <div class="rating rating-slick">
                 <div class="rating-content">
                     <div class="rating-img">
-                        <img src="img/product-1.jpg" alt="">
+                        <img src="img/product-1.png" alt="">
                         <div class="rating-share">
                             <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
@@ -231,10 +264,13 @@
                         <p class="rating-title">Fleece Badge Of Sport Graphic Hoodie</p>
                         <p class="raiting-price">$40.00</p>
                     </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
                 </div>
                 <div class="rating-content">
                     <div class="rating-img">
-                        <img src="img/product-2.jpg" alt="">
+                        <img src="img/product-2.png" alt="">
                         <div class="rating-share">
                             <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
@@ -247,10 +283,13 @@
                         <p class="rating-title">Men's Rugged Workwear Graphic Hoodie</p>
                         <p class="raiting-price">$55.00</p>
                     </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
                 </div>
                 <div class="rating-content">
                     <div class="rating-img">
-                        <img src="img/product-3.jpg" alt="">
+                        <img src="img/product-3.png" alt="">
                         <div class="rating-share">
                             <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
@@ -260,16 +299,19 @@
                     <div class="rating-btn">
                         <p><button class="btn-new">New</button></p>
                     </div>
-                    <div class="rating-description">
+                    <div class="rating-description description-line">
                         <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
                         <p class="rating-running">Running</p>
                         <p class="rating-title">Men's Dry Fleece Hoodie</p>
                         <p class="raiting-price">$40.00</p>
                     </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
                 </div>
                 <div class="rating-content">
                     <div class="rating-img">
-                        <img src="img/product-4.jpg" alt="">
+                        <img src="img/product-4.png" alt="">
                         <div class="rating-share">
                             <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
@@ -285,10 +327,13 @@
                         <p class="rating-title">Men's Rain Defender Rockland Sherpa-Lined</p>
                         <p class="raiting-price">$40.00<span>$350.99</span></p>
                     </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
                 </div>
                 <div class="rating-content">
                     <div class="rating-img">
-                        <img src="img/product-5.jpg" alt="">
+                        <img src="img/product-5.png" alt="">
                         <div class="rating-share">
                             <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
                             <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
@@ -300,6 +345,53 @@
                         <p class="rating-running">Running</p>
                         <p class="rating-title">Men's Sportswear 2019 Hooded Windrunner Jacket</p>
                         <p class="raiting-price">$40.00</p>
+                    </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
+                </div>
+                <div class="rating-content">
+                    <div class="rating-img">
+                        <img src="img/product-3.png" alt="">
+                        <div class="rating-share">
+                            <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
+                            <a href="#" class="rating-link"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="rating-btn">
+                        <p><button class="btn-new">New</button></p>
+                    </div>
+                    <div class="rating-description description-line">
+                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                        <p class="rating-running">Running</p>
+                        <p class="rating-title">Men's Dry Fleece Hoodie</p>
+                        <p class="raiting-price">$40.00</p>
+                    </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
+                    </div>
+                </div>
+                <div class="rating-content">
+                    <div class="rating-img">
+                        <img src="img/product-4.png" alt="">
+                        <div class="rating-share">
+                            <a href="#" class="rating-link"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="rating-link"><i class="fa fa-share" aria-hidden="true"></i></a>
+                            <a href="#" class="rating-link"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="rating-btn">
+                        <p><button class="btn-sale">Sale</button></p>
+                    </div>
+                    <div class="rating-description">
+                        <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                        <p class="rating-running">Sweatshirt</p>
+                        <p class="rating-title">Men's Rain Defender Rockland Sherpa-Lined</p>
+                        <p class="raiting-price">$40.00<span>$350.99</span></p>
+                    </div>
+                    <div class="rating-view">
+                        <p>View Product</p>
                     </div>
                 </div>
             </div>
@@ -313,46 +405,411 @@
                         <button class="advertisement-shops">Shop Now</button>
                     </div>
                     <div class="advertisement-img">
-                        <img src="img/flyknit.jpg" alt="">
+                        <img class="img-flyk" src="img/flyknit.png" alt="">
+                        <img class="shadow-flyk" src="img/shadow-fly.png" alt="">
                     </div>
                 </div>
                 <div class="advertisement-content right">
                     <div class="advertisement-description">
-                        <button class="advertisement-sale btn-bag">30% OFF</button>
-                        <p class="advertisement-title">Odyssey React<br><span>Flyknit 2</span></p>
-                        <p class="advertisement-price bag-price">$195 <span>$390</span></p>
-                        <button class="advertisement-shops">Shop Now</button>
+                        <button class="advertisement-sale btn-bag">BAGS & BACKPACK</button>
+                        <p class="advertisement-title"><span>Defender Small</span><br>
+                            Duffle Bag</p>
+                        <p class="advertisement-price bag-price">$75 <span>$190</span></p>
+                        <button class="advertisement-shops">View Product</button>
                     </div>
                     <div class="advertisement-img">
-                        <img src="img/bag.jpg" alt="">
+                        <img class="img-bag" src="img/bag.png" alt="">
                     </div>
                 </div>
             </div>
 
             <div class="products">
-
-
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="product-title">
+                            <h3 class="content-title">Latest Products</h3>
+                            <ul class="product-list">
+                                <li class="product-items">
+                                    <a href="#" class="product-link">Footwear</a>
+                                </li>
+                                <li class="product-items">
+                                    <a href="#" class="product-link">Apparel</a>
+                                </li>
+                                <li class="product-items">
+                                    <a href="#" class="product-link">Outdoor</a>
+                                </li>
+                                <li class="product-items">
+                                    <a href="#" class="product-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-content">
+                            <div class="rating-content product-img">
+                                <div class="rating-img">
+                                    <img src="img/fleece.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Running</p>
+                                    <p class="rating-title">Fleece Badge Of Sport Graphic Hoodie</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="rating-content product-img">
+                                <div class="rating-img">
+                                    <img src="img/men's.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Sweatshirt</p>
+                                    <p class="rating-title">Men's Rugged Workwear Graphic Hoodie</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="rating-content product-img">
+                                <div class="rating-img">
+                                    <img src="img/baged.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Running</p>
+                                    <p class="rating-title">Fleece Badge Of Sport Graphic Hoodie</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="rating-content product-img boder-img">
+                                <div class="rating-img">
+                                    <img src="img/rain.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Outerwear</p>
+                                    <p class="rating-title">Men's Rain Defender Rockland Sherpa-Lined Hooded</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="rating-content product-img boder-img">
+                                <div class="rating-img">
+                                    <img src="img/stripes.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Apparel</p>
+                                    <p class="rating-title">Women's Essentials 3-Stripes Jersey Full Zip</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="rating-content product-img boder-img">
+                                <div class="rating-img">
+                                    <img src="img/carie.jpg" alt="">
+                                </div>
+                                <div class="rating-description">
+                                    <p class="rating-running">Running</p>
+                                    <p class="rating-title">Carrie Underwood Women's Move Fitted Tank Top</p>
+                                    <p class="raiting-price">$40.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <h3 class="content-title">Best Sellers</h3>
+                        <div class="product-sellers">
+                            <div class="sellers-content">
+                                <img src="img/promic.jpg" alt="">
+                                <div class="rating-description">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                                    <p class="rating-title">PROMIC Barbell Rubber 1lb to 20lb</p>
+                                    <p class="raiting-price sellers-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="sellers-content">
+                                <img src="img/zyue.jpg" alt="">
+                                <div class="rating-description">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                                    <p class="rating-title">ZIYUE Jump Rope Premium </p>
+                                    <p class="raiting-price sellers-price">$55.00</p>
+                                </div>
+                            </div>
+                            <div class="sellers-content">
+                                <img src="img/weight.jpg" alt="">
+                                <div class="rating-description">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                                    <p class="rating-title">Stronger Ankle Weights Set</p>
+                                    <p class="raiting-price sellers-price">$40.00</p>
+                                </div>
+                            </div>
+                            <div class="sellers-content">
+                                <img src="img/hemmingwight.jpg" alt="">
+                                <div class="rating-description">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                                    <p class="rating-title">HemingWeigh 1/2-Inch  </p>
+                                    <p class="raiting-price sellers-price">$55.00</p>
+                                </div>
+                            </div>
+                            <div class="sellers-content">
+                                <img src="img/ball.jpg" alt="">
+                                <div class="rating-description">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                                    <p class="rating-title">AmazonBasics Medicine Ball </p>
+                                    <p class="raiting-price sellers-price">$30.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="latest">
+                <div class="latest-title">
+                    <h2>Latest News</h2>
+                    <p>Read Our Blog</p>
+                </div>
 
+                <div class="laster-content">
+                    <div class="latest-cate">
+                        <img src="img/collestion.jpg" alt="">
+                        <div class="latest-introdu">
+                            <p class="latest-Performance">Performance</p>
+                            <p class="latest-nike">Introducing the Nike Victory Swim Collection</p>
+                        </div>
+                        <div class="latest-time">
+                            <p> 28 Jun, 2019&nbsp;&nbsp;·&nbsp;&nbsp;<span>by</span> Administrator</p>
+                        </div>
+                    </div>
+                    <div class="latest-cate">
+                        <img src="img/treatment.jpg" alt="">
+                        <div class="latest-introdu">
+                            <p class="latest-Performance">Featured Apparel</p>
+                            <p class="latest-nike">The KOBE V Gets the Protro Treatment</p>
+                        </div>
+                        <div class="latest-time">
+                            <p> 28 Jun, 2019&nbsp;&nbsp;·&nbsp;&nbsp;<span>by</span> Administrator</p>
+                        </div>
+                    </div>
+                    <div class="latest-cate">
+                        <img src="img/ruse.jpg" alt="">
+                        <div class="latest-introdu">
+                            <p class="latest-Performance">Design</p>
+                            <p class="latest-nike">Speed and Style: the Double-Life of Russell</p>
+                        </div>
+                        <div class="latest-time">
+                            <p> 28 Jun, 2019&nbsp;&nbsp;·&nbsp;&nbsp;<span>by</span> Administrator</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-information">
+        <div class="container">
+            <div class="footer-information">
+                <div class="information-content">
+                    <h4>Find in Fast</h4>
+                    <ul class="information-list">
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Accessories
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Gaming
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Laptops & Computer
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Mac Computers
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                PC Computers
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Ultrabooks
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                EMI Payment
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Shipping Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-content">
+                    <h4>Merchant Central</h4>
+                    <ul class="information-list">
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Merchant Sign In
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                How Does It Work
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Pricing
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Fulfillment by ShopClues
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Merchant Tools
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Policies & Rules
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Testimonials
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Merchant Ratings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-content">
+                    <h4>Information</h4>
+                    <ul class="information-list">
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                All Collection
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Privacy policy
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Terms & conditio
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                In the Press
+                            </a>
+                        </li>
+                        <li class="information-item">
+                            <a href="#" class="information-link">
+                                Awards
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="information-content contact">
+                    <h4>Contact US</h4>
+                    <p>If you have any question, please 
+                        contact us at <a class="signin" href="mailto:support@example.com">support@example.com</a></p>
+                    <div class="footer-phone">
+                        <img src="img/place.png" alt="">
+                        <p>123 Sky Tower, West 21th Street, Suite, NY</p>
+                    </div>
+                    <div class="footer-phone">
+                        <img src="img/phone.png" alt="">
+                        <p>+844 123 456 789<br>
+                            +844 123 456 788</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="footer-seach">
+                <div class="seach-content">
+                    <div class="mail-img">
+                        <img src="img/mail.jpg" alt="">
+                        <p>sign up for<br>
+                            newsletter</p>
+                    </div>
+                    <p class="subscribe">Subscribe to the weekly newsletter for all<br>
+                        the latest updates</p>
+                    <form class="mail-seach">
+                        <input type="text" placeholder="Your Email">
+                        <button>Subcribe</button>
+                    </form>
+                </div>
+            </div>
 
+            <div class="footer-nav">
+                <ul class="footer-nav_list">
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Home</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">About</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Shop</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Electronics</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Blog</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Contact</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a class="footer-nav_link" href="#" title="home">Pages</a>
+                    </li>
+                </ul>
+                <p>*Price Promotions - Due to manufacturer restrictions, select new release and other<br>specified products are excluded from price promotions.</p>
+            </div>
         </div>
 
-        <div class="footer-seach">
-
-
-        </div>
-
-        <div class="footer-nav">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copy-content">
+                    <p>Copyright © 2020 <span>ekommart</span>. All Rights Reserved.</p>
+                    <div class="footer-icon">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="footer-visa">
+                        <img src="img/visa.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </div>
     </footer>
@@ -360,10 +817,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick.min.js"></script>
     <script>
         $('.slider-slick').slick({
             slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            nextArrow:false,
+            prevArrow:false
+        });
+        $('.rating-slick').slick({
+            slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,

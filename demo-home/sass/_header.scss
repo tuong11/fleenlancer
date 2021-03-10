@@ -3,7 +3,6 @@
     .header-sign{
         width: 100%;
         border-bottom: solid 1px #e6e6e6;
-        max-height: 50px;
         align-items: center;
         .sign-list{
             display: flex;
@@ -21,11 +20,15 @@
         padding: 25px 0;
         justify-content: space-between;
         align-items: center;
+        .header-logo{
+            width: 20%;
+        }
         .header-seach{
             align-items: center;
-            min-width: 630px;
-            min-height: 45px;
+            width: 50%;
             color: $color-text-seach;
+            display: flex;
+            justify-content: space-between;
             @include bodered($color-boder, 2px);
             font-size: 14px;
             img{
@@ -34,13 +37,10 @@
             }
             input{
                 color: $color-text-seach;
-                min-height: 33px;
-                min-width: 450px;
-                margin: 6px 10px 6px 0;
+                width: 80%;
             }
             button{
-                min-width: 95px;
-                min-height: 33px;
+                padding: 10px 25px;
                 margin: 6px;
                 background-color: $color-link;
                 color: $color-bg-btn;
@@ -50,16 +50,49 @@
             font-size: 16px;
             color: $color-text;
             font-weight: bold;
-            img{
-                padding-right: 20px;
+            display: flex;
+            align-items: flex-end;
+            .icon-img{
+                margin-bottom: -9px;
+                padding-right: 5px;
             }
+            
         }
     }
 }
-
 .signin{
     color: $color-link;
     &:hover{
         color: $color-link;
+    }
+}
+
+.sign-item{
+    position: relative;
+    .currency{
+        position: absolute;
+        background-color: $color-content;
+        text-align: center;
+        width: 50%;
+        content: '';
+        bottom: -148;
+        left: 60%;
+        z-index: 10;
+        display: none;
+        p{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            +p{
+                border-top: solid 1px $color-text-seach;
+                
+            }
+        }
+    }
+    .dollars{
+        &:hover{
+            .currency{
+                display: block;
+            }
+        }
     }
 }

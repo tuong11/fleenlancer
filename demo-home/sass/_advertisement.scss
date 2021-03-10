@@ -5,7 +5,6 @@
     .advertisement-content{
         align-items: center;
         width: 49%;
-        min-height: 320px;
         background-image: linear-gradient(to right, #f63831, #f88459);
         display: flex;
         justify-content: space-between;
@@ -16,8 +15,9 @@
 }
 .advertisement-description{
     padding-left: 80px;
+    width: 50%;
     .advertisement-sale{
-        padding: 5px 15px;
+        padding: 7px 15px;
         line-height: 12px;
         background-color: $color-link;
         color: $color-text;
@@ -57,5 +57,20 @@
         font-size: 14px;
         font-weight: bold;
         margin-top: 15px;
+    }
+}
+.img-bag{
+    object-position: 50px 0;
+}
+
+.advertisement-img{
+    width: 50%;
+    padding-bottom: 30px;
+    z-index: 1;
+    .img-flyk{
+        margin-top: -40px;
+    }
+    .shadow-flyk{
+        margin-left: -70px;
     }
 }

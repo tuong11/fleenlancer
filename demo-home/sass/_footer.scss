@@ -1,0 +1,139 @@
+.footer{
+    width: 100%;
+    padding-top: 80px;
+    .footer-information{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    h4{
+        margin: 0;
+        padding: 0 0 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $color-sale;
+        text-transform: uppercase;
+    }
+    .information-content{
+        width: 25%;
+        &.contact{
+            border-left: solid 1px $color-boder;
+            padding-left: 70px;
+            font-size: 14px;
+            color: $color-text-footer;
+            
+        }
+    }
+    .information-item{
+        list-style: none;
+        font-size: 14px;
+        +.information-item{
+            padding-top: 10px;
+        }
+        .information-link{
+            color: $color-text-footer;
+        }
+    }
+}
+.footer-phone{
+    padding-top: 35px;
+    display: flex;
+    img{
+        padding-right: 15px;
+    }
+}
+.footer-seach{
+    width: 100%;
+    font-size: 14px;
+    color: $color-text-footer;
+    @include bodered($color-boder, 1px);
+    margin-bottom: 35px;
+    padding: 20px 80px;
+    .seach-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mail-img{
+        display: flex;
+        width: 20%;
+        p{
+            padding-left: 15px;
+            font-size: 16px;
+            color: #363636;
+            font-weight: bold;
+            border-right: solid 1px $color-boder;
+            padding-right: 45px;
+        }
+    }
+    .mail-seach{
+        width: 50%;
+    }
+    .subscribe{
+        width: 30%;
+    }
+    .mail-seach{
+        @include bodered($color-boder, 2px);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        input{
+            width: 80%;
+            padding: 5px;
+        }
+        button{
+            width: 20%;
+            color: $color-bg-btn;
+            background-color: $color-link;
+            padding: 5px;
+        }
+    }
+}
+
+.footer-nav{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    .footer-nav_list{
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .footer-nav-item{
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        +.footer-nav-item{
+            padding-left: 20px;
+        }
+    }
+    .footer-nav_link{
+        color: $color-sale;
+    }
+    p{
+        font-size: 14px;
+        color: $color-text-seach;
+    }
+}
+
+.footer-copyright{
+    width: 100%;
+    padding: 35px 0;
+    background-color: $color-btn-bottom;
+    .copy-content{
+        display: flex;
+        justify-content: space-between;
+        color: $color-text-seach;
+        font-size: 14px;
+        span{
+            color: $color-link;
+        }
+        .fa{
+            color: $color-bg-btn;
+            font-size: 20px;
+            +.fa{
+                padding-left: 15px;
+            }
+        }
+    }
+}

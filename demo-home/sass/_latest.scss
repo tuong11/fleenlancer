@@ -1,0 +1,73 @@
+.latest{
+    width: 100%;
+    margin-top: 100px;
+    .latest-title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+        h2{
+            padding: 0 0 20px;
+            margin: 0;
+        }
+        p{
+            font-size: 14px;
+            color: $color-text-seach;
+        }
+    }
+}
+.laster-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    .latest-cate{
+        width: 31%;
+        position: relative;
+        p{
+            width: 100%;
+        }
+        .latest-introdu, .latest-time{
+            position: absolute;
+            width: 85%;
+            content: "";
+            left: 46%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .latest-introdu{
+            font-weight: bold;
+            bottom: 0;
+            background-color: $color-bg-btn;
+            transform: translateX(-45%);
+            padding: 35px 30px;
+        }
+        .latest-time{
+            color: $color-bg-btn;
+            background-color: $color-btn-bottom;
+            bottom: -10%;
+            transform: translate(-45%, 10%); 
+            padding: 15px 0;
+            p{
+                font-size: 12px;
+                color: $color-bg-btn;
+            }
+            span{
+                color: $color-text-seach;
+            }
+        }
+        .latest-Performance{
+            font-size: 14px;
+            color: $color-link;
+            padding-bottom: 15px;
+            font-weight: normal;
+        }
+        .latest-nike{
+            font-size: 16px;
+            font-weight: bold;
+            color: $color-text;
+        }
+    }
+}
