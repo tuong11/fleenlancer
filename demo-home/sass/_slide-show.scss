@@ -3,15 +3,22 @@
     .product-sale{
         margin: 30px 0;
         width: 100%;
-        min-height: 140px;
         @include bodered($color-boder, 1px);
         display: flex;
         justify-content: space-evenly;
         .shops{
             width: 33.33%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            
+                @include rp_max_991{
+                    display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                }
+                @include rp_min_992{
+                    display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                }
             +.shops{
                 border-left: solid 1px $color-boder;
             }
@@ -19,23 +26,47 @@
     }
 }
 .shops{
+    text-align: center;
+    @include rp_max_991{
+        text-align: start;
+    }
+    @include rp_min_992{
+        text-align: start;
+    }
     img{
-        padding: 0 20px;
+        padding: 0 10px;
+        @include rp_max_991{
+            padding: 0;
+        }
+    }
+    .shops-content{
+        width: 100%;
+        padding: 10px;
+        @include rp_min_992{
+            width: 50%;
+        }
+        @include rp_min_992{
+            width: 50%;
+        }
     }
     .shops-content-sale{
-        font-size: 14px;
+        @include rp_min_992{
+            font-size: 14px;
+        }
         color: $color-text-seach;
+        font-size: 12px;
     }
     .shops-content-title{
         margin: 10px 0;
-        font-size: 18px;
+        font-size: calc(14/768*100vw);
         font-weight: 600;
         color: $color-sale;
+        @include rp_min_992{
+            font-size: 18px;
+        }
     }
     button{
-        min-width: 95px;
         font-weight: bold;
-        min-height: 30px;
         @include bodered($color-bg-sale, 2px);
         font-size: 12px;
         background-color: $color-bg-btn;
@@ -44,6 +75,36 @@
 }
 .slider-slick{
     width: 100%;
+    .slick-arrow{
+        position: absolute;
+        content: '';
+        top: 50%;
+        background-color: transparent;
+        display: none;
+        @include rp_min_992{
+            display: block;
+        }
+    }
+    .slick-prev{
+        left: -60px;
+        background-image: url(../img/prev.png);
+        color: transparent;
+        padding: 14px 4px;
+        background-repeat: no-repeat;
+        &:hover, &:focus{
+            background-image: url(../img/prev-hover.png);
+        }
+    }
+    .slick-next{
+        right: -60px;
+        background-image: url(../img/next.png);
+        color: transparent;
+        padding: 14px 13.5px;
+        background-repeat: no-repeat;
+        &:hover, &:focus{
+            background-image: url(../img/next-hover.png);
+        }
+    }
 }
 
 .slider{
@@ -55,63 +116,70 @@
     .slider-content{
         position: absolute;
         content: '';
-        top: 50%;
+        top: 60%;
         left: 70%;
-        transform: translate(-50%, -70%);
+        transform: translate(-60%, -70%);
+        @include rp_min_992{
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -70%);
+        }
         .Ultimate{
-            font-size: 18px;
+            font-size: calc(16/768*100vw);
+            font-weight: bold;
+            @include rp_min_992{
+                font-size: 18px;
+            }
         }
         .more{
-            font-size: 24px;
-            padding-bottom: 25px;
+            font-size: calc(22/768*100vw);
+            padding-bottom: calc(20/768*100vw);
+            font-weight: bold;
+            @include rp_min_992{
+                font-size: 24px;
+                padding-bottom: 25px;
+            }
             .more-sale{
                 color: $color-link;
             }
         }
         button{
-            padding: 20px 35px;
+            padding: calc(15/768*100vw) calc(25/768*100vw);
             background-color: $color-bg-btn;
+            font-size: 12px;
+            font-weight: bold;
+            @include rp_min_992{
+                padding: 20px 35px;
+                font-size: 14px;
+            }
         }
         img{
-            margin: 30px 0;
+            margin: calc(20/768*100vw) 0;
+            @include rp_min_992{
+                font-size: 24px;
+                padding-bottom: 25px;
+                margin: 30px 0;
+            }
         }
     }
-    
 }
 .service{
     width: 100;
     margin: 55px 0;
 }
 
-.slick-arrow{
-    position: absolute;
-    content: '';
-    top: 50%;
-}
-.slick-prev{
-    left: -60px;
-    background-image: url(../img/prev.jpg);
-    color: transparent;
-    min-height: 48px;
-    min-width: 48px;
-    background-repeat: no-repeat;
-}
-.slick-next{
-    right: -60px;
-    background-image: url(../img/next.jpg);
-    color: transparent;
-    min-height: 48px;
-    min-width: 48px;
-    background-repeat: no-repeat;
-}
+
 .service{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     .secive-container{
         width: 25%;
         text-align: center;
-        padding: 0 60px;
+        @include rp_min_992{
+            padding: 0;
+        }
         h3{
             font-size: 16px;
             font-weight: bold;

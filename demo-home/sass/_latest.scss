@@ -1,0 +1,99 @@
+.latest{
+    width: 100%;
+    margin-top: 100px;
+    .latest-title{
+        width: 100%;
+        text-align: center;
+        h2{
+            padding: 0 0 20px;
+            margin: 0;
+        }
+        p{
+            font-size: 14px;
+            color: $color-text-seach;
+        }
+    }
+}
+.laster-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    text-align: center;
+    @include rp_max_991{
+        justify-content: space-between;
+    }
+    @include rp_min_992{
+        justify-content: space-between;
+    }
+    .latest-cate{
+        width: 60%;
+        position: relative;
+        margin-top: 80px;
+        @include rp_max_991{
+            width: 48%;
+        }
+        @include rp_min_992{
+            width: 31%;
+        }
+        p{
+            width: 100%;
+        }
+        .latest-introdu, .latest-time{
+            position: absolute;
+            width: 85%;
+            content: "";
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .latest-introdu{
+            font-weight: bold;
+            bottom: 0;
+            background-color: $color-bg-btn;
+            transform: translate(-50%, 0); 
+            padding: calc(20/767*100vw) calc(15/767*100vw);
+            @include rp_max_991{
+                padding: 25px 20px;
+            }
+            @include rp_min_992{
+                padding: 35px 30px;
+            }
+        }
+        .latest-time{
+            color: $color-bg-btn;
+            background-color: $color-btn-bottom;
+            bottom: -5.5%;
+            transform: translate(-50%, 50%); 
+            padding: calc(10/767*100vw) 0;
+            @include rp_max_991{
+                padding: 15px 0;
+            }
+            @include rp_min_992{
+                padding: 15px 0;
+            }
+            p{
+                font-size: 12px;
+                color: $color-bg-btn;
+            }
+            span{
+                color: $color-text-seach;
+            }
+        }
+        .latest-Performance{
+            font-size: 14px;
+            color: $color-link;
+            padding-bottom: 15px;
+            font-weight: normal;
+        }
+        .latest-nike{
+            font-size: 16px;
+            font-weight: bold;
+            color: $color-text;
+        }
+    }
+}
