@@ -15,3 +15,14 @@ $color-boder: #ebebeb;
 @mixin bodered($color, $width) {
     border: solid $width $color;
 }
+@mixin rp_max_991 {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin rp_min_992 {
+    @media (min-width: 992px) {
+        @content;
+    }
+}

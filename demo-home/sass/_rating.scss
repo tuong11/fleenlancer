@@ -5,12 +5,20 @@
     text-align: center;
 }
 .rating-content{
-    width: 20%;
-    padding: 35px 30px;
+    width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 25px 20px;
+    @include rp_max_991{
+        width: 25%;
+        padding: 25px 20px;
+    }
+    @include rp_min_992{
+        width: 20%;
+        padding: 35px 30px;
+    }
     &:hover{
         .rating-view{
             visibility: inherit;
@@ -136,5 +144,38 @@
     }
     .btn-sale{
         background-color: $color-bg-sale;
+    }
+}
+
+.rating-slick{
+    .slick-arrow{
+        position: absolute;
+        content: '';
+        top: -10%;
+        background-color: transparent;
+        font-size: 12px;
+    }
+    .slick-prev{
+        right: 4%;
+        padding-bottom: 10px;
+        background-image: url(../img/rating-prev.png);
+        color: transparent;
+        background-repeat: no-repeat;
+        &:hover, &:focus{
+            background-image: url(../img/rating-prev-hover.png);
+        }
+        @include rp_min_992{
+            right: 2%;
+        }
+    }
+    .slick-next{
+        right: 0;
+        padding: 0 9px 10px 0;
+        background-image: url(../img/rating-next.png);
+        color: transparent;
+        background-repeat: no-repeat;
+        &:hover, &:focus{
+            background-image: url(../img/rating-next-hover.png);
+        }
     }
 }

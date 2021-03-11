@@ -8,10 +8,28 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
     .categorys{
-        width: 24%;
+        width: 48%;
         position: relative;
         font-size: 14px;
+        display: flex;
+        justify-content: center;
+        &.categori-img{
+            margin-bottom: (70/768*100vw);
+            @include rp_max_991{
+                margin-bottom: 0;
+            }
+            @include rp_min_992{
+                margin-bottom: 0;
+            }
+        }
+        @include rp_max_991{
+            width: 24%;
+        }
+        @include rp_min_992{
+            width: 24%;
+        }
         .cate-amount, .cate-product{
             position: absolute;
             width: 70%;
@@ -26,7 +44,10 @@
             bottom: 0;
             background-color: $color-bg-btn;
             transform: translateX(-45%);
-            padding: 20px 0;
+            padding: calc(15/768*100vw) 0;
+            @include rp_min_992{
+                padding: 20px 0;
+            }
         }
         .cate-product{
             color: $color-bg-btn;
@@ -42,8 +63,14 @@
     }
 }
 h2{
+    font-size: 24px;
     padding: 65px 0 35px;
-    font-size: 30px;
     color: $color-text;
     font-weight: bold;
+    @include rp_max_991{
+        font-size: 26px;
+    }
+    @include rp_min_992{
+        font-size: 30px;
+    }
 }

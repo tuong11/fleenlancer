@@ -9,6 +9,13 @@
         font-weight: bold;
         color: $color-text;
         background-color: rgba(0, 0, 0, 0.07);
+        display: block;
+        @include rp_max_991{
+            display: none;
+        }
+        @include rp_min_992{
+            display: none;
+        }
         .fa-bars{
             margin-right: 10px;
         }
@@ -18,10 +25,26 @@
         width: 100%;
     }
     .navbar-expand-sm{
+        @include rp_max_991{
+            display: flex;
+            justify-content: center;
+        }
+        @include rp_min_992{
+            display: flex;
+            justify-content: center;
+        }
+        
         .navbar-nav {
             font-size: 16px;
             color: $color-text;
             font-weight: bold;
+            display: none;
+            @include rp_max_991{
+                display: flex;
+            }
+            @include rp_min_992{
+                display: flex;
+            }
             .nav-link {
                 padding: 18px 0;
                 color: $color-text;
