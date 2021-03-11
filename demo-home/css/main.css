@@ -270,18 +270,11 @@ p {
 .slide-show .product-sale .shops {
   width: 33.33%;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .slide-show .product-sale .shops {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
 @media (min-width: 992px) {
   .slide-show .product-sale .shops {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 .slide-show .product-sale .shops + .shops {
@@ -290,11 +283,6 @@ p {
 
 .shops {
   text-align: center;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .shops {
-    text-align: start;
-  }
 }
 @media (min-width: 992px) {
   .shops {
@@ -312,11 +300,6 @@ p {
 .shops .shops-content {
   width: 100%;
   padding: 10px;
-}
-@media (min-width: 992px) {
-  .shops .shops-content {
-    width: 50%;
-  }
 }
 @media (min-width: 992px) {
   .shops .shops-content {

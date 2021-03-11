@@ -8,16 +8,10 @@
         justify-content: space-evenly;
         .shops{
             width: 33.33%;
-            
-                @include rp_max_991{
-                    display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                }
                 @include rp_min_992{
                     display: flex;
-                justify-content: flex-start;
-                align-items: center;
+                    justify-content: flex-start;
+                    align-items: flex-end;
                 }
             +.shops{
                 border-left: solid 1px $color-boder;
@@ -27,9 +21,6 @@
 }
 .shops{
     text-align: center;
-    @include rp_max_991{
-        text-align: start;
-    }
     @include rp_min_992{
         text-align: start;
     }
@@ -42,9 +33,6 @@
     .shops-content{
         width: 100%;
         padding: 10px;
-        @include rp_min_992{
-            width: 50%;
-        }
         @include rp_min_992{
             width: 50%;
         }

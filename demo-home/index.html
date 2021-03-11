@@ -815,8 +815,15 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
-            prevArrow:false,
-            nextArrow:false,
+            arrows:true,
+            responsive: [
+                {
+                breakpoint: 992,
+                settings: {
+                    arrows:false,
+                }
+                }
+            ]
         });
         $('.rating-slick').slick({
             slidesToShow: 5,
